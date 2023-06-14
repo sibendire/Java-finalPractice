@@ -6,14 +6,14 @@ public class PlayerMain {
     * Create objects for all classes
     * */
     public static void main(String[] args) {
- Football football = new Football("mesi");
- Baseball baseball = new Baseball("moses");
- Soccer soccer = new Soccer("mpape");
+ Football mesi = new Football("mesi");
+ Baseball joshua = new Baseball("joshua");
+ Soccer sarah = new Soccer("sarah");
 
  Team manu = new Team("manu");
- manu.addPlayers(new Players("mesi"));
- manu.addPlayers(new Players("moses"));
- manu.addPlayers(new Players("mpape"));
+ manu.addPlayers(mesi);
+ manu.addPlayers(joshua);
+ manu.addPlayers(sarah);
         System.out.println(manu.numPlayers());
 
     }
