@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="javapracticals:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/javapracticals_jar</output-path>
+    <root id="archive" name="javapracticals.jar">
+      <element id="module-output" name="javapracticals" />
+    </root>
+  </artifact>
+</component>
