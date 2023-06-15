@@ -2,14 +2,14 @@ package methodsjava.generic;
 
 import java.util.ArrayList;
 
-public class Team {
+public class Team <T>{
     private String identity;
     int won = 0;
     int lost = 0;
     int tied = 0;
     int played = 0;
 
-private ArrayList<Players> members = new ArrayList <>();
+private ArrayList<Players> members = (ArrayList<Players>) new ArrayList <T>();
     public Team(String identity) {
         this.identity = identity;
     }
@@ -40,9 +40,11 @@ private ArrayList<Players> members = new ArrayList <>();
     /*
     * Check the results
     * */
+    String message;
     public void matchResults(Team Opponent, int ourScore,int theirScore ){
         if (ourScore > theirScore){
             won++;
+            System.out.println("you have won the game"+ message);
         } else if (ourScore == theirScore) {
            tied++;
         }else {
